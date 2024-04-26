@@ -43,11 +43,13 @@ class ViewController: UIViewController {
                 {
                     self.img.image = UIImage(named: "online")
                     self.status.text = "Online"
+                    print("online")
                 }
                 else
                 {
                     self.img.image = UIImage(named: "offlin")
                     self.status.text = "Offline"
+                    print("offline")
                     self.showOfflineAlert()
                 }
             }
