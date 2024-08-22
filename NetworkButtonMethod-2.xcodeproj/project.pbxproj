@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1903BC2C773B280025654C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1903BB2C773B280025654C /* NetworkManager.swift */; };
 		6FA989672BDBD6A000E673E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA989662BDBD6A000E673E6 /* AppDelegate.swift */; };
 		6FA989692BDBD6A000E673E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA989682BDBD6A000E673E6 /* SceneDelegate.swift */; };
 		6FA9896B2BDBD6A000E673E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA9896A2BDBD6A000E673E6 /* ViewController.swift */; };
 		6FA9896E2BDBD6A100E673E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FA9896D2BDBD6A100E673E6 /* Base */; };
 		6FA989702BDBD6A300E673E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FA9896F2BDBD6A300E673E6 /* Assets.xcassets */; };
 		6FA989732BDBD6A300E673E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6FA989722BDBD6A300E673E6 /* Base */; };
+		6FB3C6412C7742F80079C39E /* No_Internet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3C6402C7742F80079C39E /* No_Internet.gif */; };
+		6FB3C6452C774C9D0079C39E /* No_Internet_loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3C6442C774C9D0079C39E /* No_Internet_loader.gif */; };
+		6FC40E212C74642C00F1FC76 /* ConnectedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC40E202C74642C00F1FC76 /* ConnectedPage.swift */; };
+		CB377A5AFFF9F5FA1A44DE65 /* Pods_NetworkButtonMethod_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C15FC8C85498E5B520A1AC /* Pods_NetworkButtonMethod_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0227C225972FF16CED444BE3 /* Pods-NetworkButtonMethod-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkButtonMethod-2.release.xcconfig"; path = "Target Support Files/Pods-NetworkButtonMethod-2/Pods-NetworkButtonMethod-2.release.xcconfig"; sourceTree = "<group>"; };
+		55E13D7955E6890B05A262C3 /* Pods-NetworkButtonMethod-2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkButtonMethod-2.debug.xcconfig"; path = "Target Support Files/Pods-NetworkButtonMethod-2/Pods-NetworkButtonMethod-2.debug.xcconfig"; sourceTree = "<group>"; };
+		6F1903BB2C773B280025654C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		6FA989632BDBD6A000E673E6 /* NetworkButtonMethod-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NetworkButtonMethod-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA989662BDBD6A000E673E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FA989682BDBD6A000E673E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		6FA9896F2BDBD6A300E673E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FA989722BDBD6A300E673E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FA989742BDBD6A300E673E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB3C6402C7742F80079C39E /* No_Internet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = No_Internet.gif; path = ../../../../Task/No_Internet.gif; sourceTree = "<group>"; };
+		6FB3C6442C774C9D0079C39E /* No_Internet_loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = No_Internet_loader.gif; path = ../../../../Task/No_Internet_loader.gif; sourceTree = "<group>"; };
+		6FC40E202C74642C00F1FC76 /* ConnectedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedPage.swift; sourceTree = "<group>"; };
+		C1C15FC8C85498E5B520A1AC /* Pods_NetworkButtonMethod_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkButtonMethod_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB377A5AFFF9F5FA1A44DE65 /* Pods_NetworkButtonMethod_2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EDB261C61DE1FFE8E1C9166 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55E13D7955E6890B05A262C3 /* Pods-NetworkButtonMethod-2.debug.xcconfig */,
+				0227C225972FF16CED444BE3 /* Pods-NetworkButtonMethod-2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6E283264F7C232C5A98C4B18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1C15FC8C85498E5B520A1AC /* Pods_NetworkButtonMethod_2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6FA9895A2BDBD6A000E673E6 = {
 			isa = PBXGroup;
 			children = (
 				6FA989652BDBD6A000E673E6 /* NetworkButtonMethod-2 */,
 				6FA989642BDBD6A000E673E6 /* Products */,
+				0EDB261C61DE1FFE8E1C9166 /* Pods */,
+				6E283264F7C232C5A98C4B18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +91,11 @@
 				6FA989662BDBD6A000E673E6 /* AppDelegate.swift */,
 				6FA989682BDBD6A000E673E6 /* SceneDelegate.swift */,
 				6FA9896A2BDBD6A000E673E6 /* ViewController.swift */,
+				6F1903BB2C773B280025654C /* NetworkManager.swift */,
+				6FB3C6442C774C9D0079C39E /* No_Internet_loader.gif */,
+				6FB3C6402C7742F80079C39E /* No_Internet.gif */,
 				6FA9896C2BDBD6A100E673E6 /* Main.storyboard */,
+				6FC40E202C74642C00F1FC76 /* ConnectedPage.swift */,
 				6FA9896F2BDBD6A300E673E6 /* Assets.xcassets */,
 				6FA989712BDBD6A300E673E6 /* LaunchScreen.storyboard */,
 				6FA989742BDBD6A300E673E6 /* Info.plist */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FA989772BDBD6A300E673E6 /* Build configuration list for PBXNativeTarget "NetworkButtonMethod-2" */;
 			buildPhases = (
+				E4F7747F3FB0D149C88038C2 /* [CP] Check Pods Manifest.lock */,
 				6FA9895F2BDBD6A000E673E6 /* Sources */,
 				6FA989602BDBD6A000E673E6 /* Frameworks */,
 				6FA989612BDBD6A000E673E6 /* Resources */,
+				AFC08FE7CCA1E0B2835FA2FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB3C6412C7742F80079C39E /* No_Internet.gif in Resources */,
+				6FB3C6452C774C9D0079C39E /* No_Internet_loader.gif in Resources */,
 				6FA989702BDBD6A300E673E6 /* Assets.xcassets in Resources */,
 				6FA989732BDBD6A300E673E6 /* Base in Resources */,
 				6FA9896E2BDBD6A100E673E6 /* Base in Resources */,
@@ -133,6 +173,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AFC08FE7CCA1E0B2835FA2FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkButtonMethod-2/Pods-NetworkButtonMethod-2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkButtonMethod-2/Pods-NetworkButtonMethod-2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkButtonMethod-2/Pods-NetworkButtonMethod-2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F7747F3FB0D149C88038C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkButtonMethod-2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6FA9895F2BDBD6A000E673E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +222,8 @@
 			files = (
 				6FA9896B2BDBD6A000E673E6 /* ViewController.swift in Sources */,
 				6FA989672BDBD6A000E673E6 /* AppDelegate.swift in Sources */,
+				6F1903BC2C773B280025654C /* NetworkManager.swift in Sources */,
+				6FC40E212C74642C00F1FC76 /* ConnectedPage.swift in Sources */,
 				6FA989692BDBD6A000E673E6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +371,14 @@
 		};
 		6FA989782BDBD6A300E673E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E13D7955E6890B05A262C3 /* Pods-NetworkButtonMethod-2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 745N9NAXS4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NetworkButtonMethod-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,6 +386,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,12 +402,14 @@
 		};
 		6FA989792BDBD6A300E673E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0227C225972FF16CED444BE3 /* Pods-NetworkButtonMethod-2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 745N9NAXS4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "NetworkButtonMethod-2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +417,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

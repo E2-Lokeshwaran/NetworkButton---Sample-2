@@ -14,58 +14,65 @@ class ViewController: UIViewController {
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var img: UIImageView!
     
-
-    private let monitor = NWPathMonitor()
-        private var isMonitoringActive = false
+    let monitor = NWPathMonitor()
+    var isMonitoringActive = false
+    var connect : ConnectedPage?
+            
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        setupMonitoring()
+    }
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            setupMonitoring()
-        }
-        
-        private func setupMonitoring() {
+    func setupMonitoring()
+    {
             monitor.pathUpdateHandler = { path in
-                if path.status == .satisfied {
+                if path.status == .satisfied 
+                {
                     self.updateImageView(isConnected: true)
-                } else {
+//                    self.connect?.statusLbl.text = "connected"
+                }
+                else
+                {
                     self.updateImageView(isConnected: false)
+//                  self.connect?.statusLbl.text = "Not connected"
                 }
             }
-            
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyBoard.instantiateViewController(withIdentifier: "ConnectedPage") as! ConnectedPage
+//        navigationController?.pushViewController(vc, animated: true);
             let queue = DispatchQueue(label: "NetworkMonitor")
             monitor.start(queue: queue)
             isMonitoringActive = true
         }
         
-        private func updateImageView(isConnected: Bool) {
-            DispatchQueue.main.async {
-                if isConnected 
+        func updateImageView(isConnected: Bool) 
+        {
+            DispatchQueue.main.async
+                {
+                if isConnected
                 {
                     self.img.image = UIImage(named: "online")
                     self.status.text = "Online"
+                    //self.view.backgroundColor = .green
                     print("online")
                 }
                 else
                 {
                     self.img.image = UIImage(named: "offlin")
                     self.status.text = "Offline"
+                    //self.view.backgroundColor = .red
                     print("offline")
-                    self.showOfflineAlert()
                 }
             }
         }
-        private func showOfflineAlert() {
-            let alert = UIAlertController(title: "No Internet Connection", message: "Please check your internet connection and try again.", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alert.addAction(okAction)
-            present(alert, animated: true, completion: nil)
-        }
-        
-        deinit {
-            if isMonitoringActive {
-                monitor.cancel()
-            }
-        }
+    
+    @IBAction func nextVc(_ sender: Any)
+    {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "ConnectedPage") as! ConnectedPage
+        navigationController?.pushViewController(vc, animated: true);
     }
+}
 
 

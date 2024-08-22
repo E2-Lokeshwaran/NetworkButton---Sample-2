@@ -9,6 +9,7 @@ import UIKit
 
 class ConnectedPage: UIViewController {
 
+    @IBOutlet weak var statusLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
